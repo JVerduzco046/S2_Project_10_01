@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 8
+   Case Problem 1
+
+   Rhetoric in the United States Styles for Media
+   Author: Juan Verduzco
+   Date:   01.29.19
+
+   Filename: ws_media.css
+
+*/
+
+/* VideoPlayer Styles */
+video {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+}
+
+/* styles only display with screens bigger than 521px  */
+@media only screen and (min-width:521px) {
+    video {
+        width: 360px;
+        float: right;
+        margin: 10px;
+    }
+}
+
+/* Chnages the way the caption appear in the video */
+/* Track Styles */
+::cue {
+    font: 1.3em sans-serif;
+    color: rgb(221, 128, 160);
+    background-color: rgba(255, 255, 255, 0.8)
+}
